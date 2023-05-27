@@ -13,6 +13,7 @@ import AnswerQuestion from "./pages/QuestionDetail/QuestionDetail";
 function App() {
   const [userData, setUserData] = useContext(UserContext);
 
+  //use local storage 
   const checkLoggedIn = async () => {
     let token = localStorage.getItem("auth-token");
     if (token === null) {
